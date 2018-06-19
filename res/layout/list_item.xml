@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-05-04"
+        android:textSize="16sp"/>
+
+    <ImageView
+        android:id="@+id/weather_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/date"
+        android:src="@drawable/wi_color_cloudy"
+        android:layout_marginLeft="12dp"/>
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="summary placeholder"
+        android:layout_centerInParent="true"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/average"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="57"
+        android:layout_alignParentRight="true"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/minimum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="52"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/maximum"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/maximum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="64"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/average"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+</RelativeLayout>
